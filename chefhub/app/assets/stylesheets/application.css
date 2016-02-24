@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+body {
+ background-color: #CEF6F5 ;
+}
+
+h1, h2, h3, li  {
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+ font-family: 'Josefin Sans', 'Georgia', serif;
+}
