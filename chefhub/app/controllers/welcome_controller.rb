@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
 	def index
-	end
+    @chefs_count = Chef.all.count
+    @chefs = Chef.all
+  end
 end
