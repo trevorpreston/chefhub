@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'welcome#index'
+  devise_scope :user do
+    root to: "devise/sessions#new"
+  end
 
   resources :chefs
 
