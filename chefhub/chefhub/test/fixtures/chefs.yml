@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phone: MyString
+  start_date: 2016-03-01 18:44:43
+  team_captain: MyString
+  address: MyString
+  working_status: MyString
+  vip_status: MyString
+  title: MyString
+  avg_rating: 1.5
+  lyft: MyString
+  pam: MyString
+  endzone: MyString
+
+two:
+  phone: MyString
+  start_date: 2016-03-01 18:44:43
+  team_captain: MyString
+  address: MyString
+  working_status: MyString
+  vip_status: MyString
+  title: MyString
+  avg_rating: 1.5
+  lyft: MyString
+  pam: MyString
+  endzone: MyString
