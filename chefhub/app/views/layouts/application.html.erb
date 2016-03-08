@@ -1,26 +1,38 @@
- <%= render "layouts/nav" %>
 
 
+<head>
+  <title>Chefhub</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
 
-<%= yield %>
+<body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><%= image_tag 'logos/ks_logo.png', :class => "navbar-brand logo" %></a>
+        </div>
+        </div>
+        </nav>
+
 <div class = "container">
 
-<h2>About ChefHub</h2>
-
-	<div class="col-xs-9">
-
-       <p>Ya'll can never access your reviews. You forget the link. That fucking email gets lost. I sometimes freaking just forget to send it TBH. Well now you know what? No more emails. No more Google Docs. No more nonsense. Just code. </p>
-
-       <p>Welcome to ChefHub. Your one stop solution to become efficient, happy, cooking badasses. Brought to you by T.Pres and N.Kamz </p>
-    </div>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-
-<div class="col-xs-9 col-centered">
-<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-md" %>
-<%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-md" %>
 </div>
 </div>
 </body>
 </html>
+
+
+<%= yield %>
